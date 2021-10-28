@@ -1,0 +1,27 @@
+body {
+    background: rgb(255, 255, 255);
+    margin: 40px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 1em;
+}
+
+p{
+ font-family: 'Poppins', sans-serif;
+  color: rgba(86, 96, 115, 0.7);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.containr {
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
