@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>First Site</title>
+
+    <!-- #Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: rgb(255, 255, 255);
+            font-family: 'Poppins',
+                sans-serif;
+            margin: 40px;
+            color: rgb(38, 54, 63);
+            font-size: medium;
+        }
+
+        .text {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(38, 54, 63);
+            margin: 10px;
+        }
+
+        .txtspan {
+            color: rgb(75, 233, 159)
+        }
+
+        table,
+        th,
+        td {
+            border: 4px solid beige;
+        }
+
+        .cotent {
+            font-family: 'Poppins', sans-serif;
+            background: rgba(255, 255, 255);
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 33.3%);
+            gap: 1em;
+        }
+    </style>
+</head>
+
+<h1>ETIQUETAS DE HTML</h1>
+<hr>
+<h2>Etiquetas para titulos <span class="txtspan">&lt;h1&gt; &lt;/h1&gt; a &lt;h6&gt; &lt;/h6&gt;</span></h2>
+<div class="cotent">
+    <h1>Titulos con <span class="txtspan">H1</span></h1>
+    <h2>Titulos con <span class="txtspan">H2</span></h2>
+    <h3>Titulos con <span class="txtspan">H3</span></h3>
+    <h4>Titulos con <span class="txtspan">H4</span></h4>
+    <h5>Titulos con <span class="txtspan">H5</span></h5>
+    <h6>Titulos con <span class="txtspan">H6</span></h6>
+</div>
+
+
+<h2>Etiquetas para parrafos <span class="txtspan">&lt;p&gt; &lt;/p&gt;</span></h2>
+<div class="cotent">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sequi nihil dicta, eius vel minima facilis
+        debitis sint ipsum. Est molestiae, expedita sunt exercitationem ullam excepturi ut laboriosam nulla nihil!</p>
+</div>
+
+<h2>Hiperviculos <span class="txtspan">&lt;a&gt;&lt;/a&gt;</span></h2>
+<div class="cotent">
+    <a href="https://www.google.com/" target="_blank">Esto es un hiperviculo</a>
+</div>
+
+<h2>Imagenes <span class="txtspan">&lt;img/&gt;</span></h2>
+<div class="cotent">
+    <img src="resource/DDD7W7X.webp" alt="cargando..." width="200px">
+</div>
+
+<h2>Etiquetas especiales</h2>
+<div class="main">
+    <div class="cotent">
+        <h4>Dibuja Linea horizontal <span class="txtspan">&lt;hr&gt;</span></h4>
+        <hr>
+    </div>
+    <div class="cotent">
+        <h4>Salto de linea <span class="txtspan">&lt;br&gt;</span></h4>
+        linea 1 <br> linea2
+    </div>
+    <div class="cotent">
+        <h4>Colorea una parte de un texto <span class="txtspan">&lt;spam&gt;&lt;/spam&gt;</span></h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum <spa class="txtspan">eveniet sit deleniti
+            </spa>magnam magni
+            voluptatem sapiente a vel nesciunt dignissimos.</p>
+    </div>
+    <div class="cotent">
+        <h4>Etiqueta para tablas<span class="txtspan">&lt;table&gt;&lt;/table&gt;</span></h4>
+        <h5>Etiquetas hijo</h5>
+        <ul>
+            <li><span class="txtspan">&lt;tr&gt;&lt;/tr&gt;</span> Para filas</li>
+            <li><span class="txtspan">&lt;th&gt;&lt;/th&gt;</span> Para encabezado</li>
+            <li><span class="txtspan">&lt;td&gt;&lt;/td&gt;</span> Para datos</li>
+            <li><span class="txtspan">&lt;thead&gt;&lt;/thead&gt;</span> Para agrupar etiquetas de encabezado</li>
+            <li><span class="txtspan">&lt;tbody&gt;&lt;/tbody&gt;</span> Para agrupar etiquetas de contenido de tabla</li>
+            <li><span class="txtspan">&lt;tfoot&gt;&lt;/tfoot&gt;</span> Para agrupar etiquetas de encabezado</li>
+        </ul>
+
+        <table style="width: auto;">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>Perez</td>
+                </tr>
+                <tr>
+                    <td>Antonio</td>
+                    <td>Perez Xum</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="cotent">
+        <h4>Lista</h4>
+        <h5>Lista no ordenada <span class="txtspan">&lt;ul&gt;&lt;/ul&gt;</span></h5>
+        <ul>
+            <li>Lita no ordenada 1</li>
+            <li>Lita no ordenada 2</li>
+        </ul>
+
+        <h5>Lista ordenada + sub elementos<span class="txtspan">&lt;ol&gt;&lt;/ol&gt;</span></h5>
+        <ol>
+            <li>Lita no ordenada 1</li>
+            <li>Lita no ordenada 2
+                <ol>
+                    <li style="list-style-type:lower-latin">Sub elementno 2.1</li>
+                    <li style="list-style-type:lower-latin">Sub elementno 2.2</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <div class="cotent">
+        <h4>Formularios <span class="txtspan">&lt;form&gt;&lt;/form&gt;</span></h4>
+         <h5>Etiquetas hijo</h5>
+         <ul>
+             <li><span class="txtspan">&lt;label&gt;&lt;/label&gt;</span> Titulo del input</li>
+             <li><span class="txtspan">&lt;input&gt;&lt;/input&gt;</span> Input para ingreso de datos</li>
+             <li><span class="txtspan">&lt;textarea&gt;&lt;/textarea&gt;</span> Para datos o texto grandes</li>
+             <li><span class="txtspan">&lt;button&gt;&lt;/button&gt;</span> Buton de tipo (Submit | Reset | Button)</li>
+         </ul>
+
+        <form action="" method="post" style="background-color: rgba(75, 233, 159, 0.219) ; border-radius: 10px; padding: 10px;">
+            <label for="nombre">Nombre</label>
+            <input class="text" id="nombre" name="nombre" placeholder="Ingrese nombre" type="text" ">
+            <br>
+            <label for=" pass">Password</label>
+            <input class="text" id="pass" name="pass" placeholder="Ingrese pass" type="password" ">
+            <br>
+            <textarea class="text" name=" comentario" id="comentario" cols="40" rows="5"></textarea>
+            <br>
+            <button class=" text" type="reset">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<!--
+        comentario de texto
+    -->
+</body>
+
+</html>
